@@ -1,0 +1,19 @@
+<% include ./partials/header %>
+<div class="container">
+    <div class="row">
+        <div id="borderedContainer" class="col-md-8 col-md-offset-2">
+            <h1 class="text-center"><%= recipe.title %></h1>
+            <p class="text-muted text-center"><%= recipe.shortDesc %></p>
+            <div class="text-center">
+                <img id="mainImage" src="<%= recipe.image %>" class="img-responsive img-thumbnail">
+            </div>
+            <h3>Directions</h3>
+            <p><%- recipe.recipe %></p>
+            <a class="btn btn-warning" href="/foodRecipes/<%= recipe._id%>/edit">Edit</a>
+            <form id="deleteForm" action="/foodRecipes/<%= recipe._id%>?_method=DELETE" method="POST">
+                <button class="btn btn-danger disabled">Delete</button>
+            </form>
+        </div>
+    </div>
+</div>
+<% include ./partials/footer %>

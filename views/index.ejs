@@ -1,0 +1,23 @@
+<% include ./partials/header %>
+
+<div class="container">
+<% recipes.forEach(function(recipe){ %>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2" id="borderedContainer">
+            <h3><%= recipe.title %></h3>
+            <div class="row">
+                <div class="col-md-5">
+                    <img id="mainImage" src="<%= recipe.image %>" class="img-responsive">
+                </div>
+                <div class="col-md-7">
+                    <p><%= recipe.shortDesc %></p>
+                    <div>
+                        <a class="btn btn-info" href="/foodRecipes/<%= recipe._id%>">Read More <span class="glyphicon glyphicon-new-window"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<% }) %>
+</div>
+<% include ./partials/footer %>
