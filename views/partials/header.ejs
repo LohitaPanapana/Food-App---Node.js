@@ -9,11 +9,19 @@
         <nav class="navbar navbar-inverse">
             <div class="container">
                 <div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
                     <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-grain"></span> Food App</a>
                 </div>
-                <ul class="nav navbar-nav">
-                    <li><a href="/foodRecipes">HOME</a></li>
-                    <li><a href="/foodRecipes/new">NEW</a></li>
-                </ul>
+				<div class="collapse navbar-collapse" id="main-nav">
+					<ul class="nav navbar-nav">
+						<li><a href="/foodRecipes">HOME</a></li>
+						<li><a href="/foodRecipes/new">NEW</a></li>
+					</ul>
+				</div>
             </div>
         </nav>

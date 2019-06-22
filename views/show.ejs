@@ -11,7 +11,7 @@
             <p><%- recipe.recipe %></p>
             <a class="btn btn-warning" href="/foodRecipes/<%= recipe._id%>/edit">Edit</a>
             <form id="deleteForm" action="/foodRecipes/<%= recipe._id%>?_method=DELETE" method="POST">
-                <button class="btn btn-danger disabled">Delete</button>
+                <button class="btn btn-danger disabled" disabled>Delete</button>
             </form>
         </div>
     </div>

@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(methodOverride("_method"));
 
 // mongoose.connect("mongodb://localhost:27017/food_app", {useNewUrlParser: true});
-mongoose.connect("mongodb+srv://yelpuser:WpxAhqD1FMOyKIER@cluster0-y9rzq.mongodb.net/test?retryWrites=true&w=majority", {useNewUrlParser: true},function(err) {
+mongoose.connect("mongodb+srv://yelpuser:WpxAhqD1FMOyKIER@cluster0-y9rzq.mongodb.net/food_app?retryWrites=true&w=majority", {useNewUrlParser: true},function(err) {
     if (err) { return console.error(err);}
   });
 
